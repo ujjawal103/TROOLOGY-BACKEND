@@ -11,6 +11,10 @@ const userRoutes = require("./routes/user.routes");
 const projectRoutes = require("./routes/project.routes");
 const dashboardRoutes = require("./routes/dashboard.routes");
 const multer = require("multer");
+if (process.env.NODE_ENV !== "production") {
+  const dns = require("node:dns");
+  dns.setServers(["8.8.8.8", "8.8.4.4"]);
+}
 
 
 
