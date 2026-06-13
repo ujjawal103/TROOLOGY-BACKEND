@@ -1,0 +1,68 @@
+{
+  "info": {
+    "_postman_id": "8f967a08-0d12-4b0b-8a37-a09420d8d2f8",
+    "name": "USER ACTIONS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46759559"
+  },
+  "item": [
+    {
+      "name": "LOGIN USER",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"ujjawal2@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/v1/auth/login",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATE OWN PROFILE",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"UjjawalUpdated\",\r\n  \"lastName\": \"JaiswalUpdated\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/user/profile/update",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "profile",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

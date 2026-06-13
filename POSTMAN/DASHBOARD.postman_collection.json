@@ -1,0 +1,41 @@
+{
+  "info": {
+    "_postman_id": "d0560ea8-ed1a-401c-bff8-9d8a380c274c",
+    "name": "DASHBOARD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46759559"
+  },
+  "item": [
+    {
+      "name": "STATS ADMIN",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"ujjawal2@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/dashboard/stats",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "dashboard",
+            "stats"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

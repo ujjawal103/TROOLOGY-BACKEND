@@ -1,0 +1,308 @@
+{
+  "info": {
+    "_postman_id": "d2ad5966-6281-4caa-89f6-13e091050842",
+    "name": "PROJECT ACTIONS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46759559"
+  },
+  "item": [
+    {
+      "name": "CREATE PROJECT ADMIN",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "Restraunt Platform new",
+              "type": "text",
+              "uuid": "9352de6f-8dcc-4f00-8b4d-7235f071b5ae"
+            },
+            {
+              "key": "description",
+              "value": "Build a full stack e-commerce platform using MERN stack with authentication and payment integration.",
+              "type": "text",
+              "uuid": "d41be572-a3d8-4c47-a656-e5309251cd84"
+            },
+            {
+              "key": "startDate",
+              "value": "2026-06-13",
+              "type": "text",
+              "uuid": "b4598d2b-55cf-4e94-afc7-9ec9f42f35bb"
+            },
+            {
+              "key": "endDate",
+              "value": "2026-06-18",
+              "type": "text",
+              "uuid": "b59b702c-bf88-42d5-b103-34c4fa690db8"
+            },
+            {
+              "key": "status",
+              "value": "Pending",
+              "type": "text",
+              "uuid": "8f38eb6e-6926-4839-9095-03152d34326d"
+            },
+            {
+              "key": "assignedUsers",
+              "value": "6a2bdacc66edcec6856accf5",
+              "type": "text",
+              "uuid": "93696e6d-ad5f-4d55-830e-ae611ac83435"
+            },
+            {
+              "key": "assignedUsers",
+              "value": "6a2bdb8b66edcec6856acd01",
+              "type": "text",
+              "uuid": "98bdeab1-8983-47ca-8c60-d446e545f1a4"
+            },
+            {
+              "key": "assignedUsers",
+              "value": "6a2c574c1a3eb81220cf414d",
+              "type": "text",
+              "uuid": "e7b17e9c-ce09-48b6-a4a7-ca56d4f55dad"
+            },
+            {
+              "key": "attachments",
+              "type": "file",
+              "uuid": "6c53b4b7-2527-4a62-828f-76ffbf6076b4",
+              "src": "/C:/Users/ujjaw/Downloads/dhruv solution.webp"
+            },
+            {
+              "key": "attachments",
+              "type": "file",
+              "uuid": "4a943c0c-f75d-4136-9fc7-2d0808cefc57",
+              "src": "/C:/Users/ujjaw/Downloads/ujju1.png"
+            },
+            {
+              "key": "attachments",
+              "type": "file",
+              "uuid": "0026a0fa-7090-4dee-82e9-f771991ce2fc",
+              "src": "/C:/Users/ujjaw/Downloads/parulimprovement.pdf"
+            },
+            {
+              "key": "attachments",
+              "type": "file",
+              "uuid": "e569ce8e-8ce6-40d2-8b47-de563d6d9c90",
+              "src": "/C:/Users/ujjaw/Downloads/IMG_20260510_124235_1.jpg.jpeg",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/project",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "project"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Projects",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Ujjawal\",\r\n  \"lastName\": \"Jaiswal\",\r\n  \"email\": \"ujjawal2@gmail.com\",\r\n  \"password\": \"12345678\",\r\n  \"role\": \"user\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/project",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "project"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Project By Id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Ujjawal\",\r\n  \"lastName\": \"Jaiswal\",\r\n  \"email\": \"ujjawal2@gmail.com\",\r\n  \"password\": \"12345678\",\r\n  \"role\": \"user\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/project/6a2c59dc250c752a45ad319f",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "project",
+            "6a2c59dc250c752a45ad319f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE PROJECT BY ADMIN",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/project/6a2c6140ba20b4e35711ecd4",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "project",
+            "6a2c6140ba20b4e35711ecd4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATE  PROJECT BY ADMIN",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "title",
+              "value": "Updated E-Commerce Project",
+              "type": "text",
+              "uuid": "3de37145-c567-483a-93b3-3b929ebcd1d9"
+            },
+            {
+              "key": "status",
+              "value": "In-Progress",
+              "type": "text",
+              "uuid": "fa992078-7351-4675-96fa-d9f118afa752"
+            },
+            {
+              "key": "attachments",
+              "type": "file",
+              "uuid": "f6d6c271-40d6-49d2-b101-82bca0fe2896",
+              "src": "/C:/Users/ujjaw/Downloads/WhatsApp Image 2026-05-12 at 11.36.41 AM.jpeg"
+            },
+            {
+              "key": "startDate",
+              "value": "2026-06-13",
+              "type": "text",
+              "uuid": "7345f54f-944e-47a8-bd1d-10bbbb15c87c"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/project/6a2c59dc250c752a45ad319f",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "project",
+            "6a2c59dc250c752a45ad319f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CHANGE PROJECT STATUS BY USER",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status\": \"Completed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/project/status/6a2c59dc250c752a45ad319f",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "project",
+            "status",
+            "6a2c59dc250c752a45ad319f"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

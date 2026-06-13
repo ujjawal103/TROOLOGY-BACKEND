@@ -1,0 +1,187 @@
+{
+  "info": {
+    "_postman_id": "0e5e45ff-3e7f-4e70-b590-c524d39f454d",
+    "name": "ADMIN ACTIONS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46759559"
+  },
+  "item": [
+    {
+      "name": "CREATE USER",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Ujjawal\",\r\n  \"lastName\": \"Jaiswal\",\r\n  \"email\": \"ujjawal2@gmail.com\",\r\n  \"password\": \"12345678\",\r\n  \"role\": \"user\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/user/",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ALL USERS",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Ujjawal\",\r\n  \"lastName\": \"Jaiswal\",\r\n  \"email\": \"ujjawal2@gmail.com\",\r\n  \"password\": \"12345678\",\r\n  \"role\": \"user\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/user/",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "USER BY ID",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Ujjawal\",\r\n  \"lastName\": \"Jaiswal\",\r\n  \"email\": \"ujjawal2@gmail.com\",\r\n  \"password\": \"12345678\",\r\n  \"role\": \"user\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/user/6a2bd24aa906b73bf3cb3187",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "6a2bd24aa906b73bf3cb3187"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATE USER DETAILS",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Ujjawal\",\r\n  \"lastName\": \"Jaiswal\",\r\n  \"email\": \"admin1@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/user/6a2bd24aa906b73bf3cb3187",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "6a2bd24aa906b73bf3cb3187"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CHANGE ROLE",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmJkMjRhYTkwNmI3M2JmM2NiMzE4NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTI1ODgzNSwiZXhwIjoxNzgxODYzNjM1fQ.kZAKHKEeCa3YQgL9PUQ_ms5ZigMiz81_fBzxAoJ_QbE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"role\" : \"user\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/user/role/6a2bdb8b66edcec6856acd01",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "user",
+            "role",
+            "6a2bdb8b66edcec6856acd01"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

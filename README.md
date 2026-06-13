@@ -1,4 +1,13 @@
-# API Documentation
+## Postman Collection
+
+The complete API collection used for testing is available in:
+
+```text
+postman/
+```
+
+
+**API Documentation**
 
 This documentation covers all the APIs available in the backend. Each API includes examples with success and error responses.
 
